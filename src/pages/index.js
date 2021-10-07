@@ -5,7 +5,7 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 
 const HomeIndex = () => {
-  const siteTitle = 'Gatsby Starter - Strata'
+  const siteTitle = 'Brendan Ryan | Software Developer'
   const siteDescription = 'Site description'
 
   return (
@@ -19,9 +19,9 @@ const HomeIndex = () => {
         <section id="one">
           <header className="major">
             <h2>
-              Ipsum lorem dolor aliquam ante commodo
+              Software developer with professional experience
               <br />
-              magna sed accumsan arcu neque.
+              in a number of fields.
             </h2>
           </header>
           <p>
@@ -117,7 +117,7 @@ const HomeIndex = () => {
                   <h3 className="icon fa-envelope-o">
                     <span className="label">Email</span>
                   </h3>
-                  <a href="#">brendan.ryan@pm.me</a>
+                  <a href="mailto:brendan.ryan@pm.me">brendan.ryan@pm.me</a>
                 </li>
               </ul>
             </div>
