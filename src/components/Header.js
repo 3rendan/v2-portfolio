@@ -11,7 +11,7 @@ const Header = () => (
       </a>
       <h1>
         <strong>Brendan Ryan<br /></strong>
-        Software Developer
+        <p>Software Developer</p>
         <br />
       </h1>
     </div>

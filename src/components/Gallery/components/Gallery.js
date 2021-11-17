@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Carousel, { Modal, ModalGateway } from 'react-images'
 import GalleryItem from './GalleryItem'
 import { DEFAULT_IMAGES } from '../constants/defaultImages'
+import Style from '../../../styles/Gallery'
 
 const Gallery = ({ images = DEFAULT_IMAGES }) => {
   const [lightboxIsOpen, setLightboxIsOpen] = useState(false)
@@ -14,10 +15,10 @@ const Gallery = ({ images = DEFAULT_IMAGES }) => {
   }, [lightboxIsOpen])
 
   return (
-    <div>
-      {images && (<div className="row">
+    <Style>
+      {images && (<div>
         {images.map((obj, i) => {
-        return (<GalleryItem
+        return (<a href={obj.link} target="_blank"><GalleryItem
           id={obj.id}
           source={obj.source}
           thumbnail={obj.thumbnail}
@@ -27,7 +28,7 @@ const Gallery = ({ images = DEFAULT_IMAGES }) => {
           toggleLightbox={obj.toggleLightbox}
           position={i}
           toggleLightbox={toggleLightbox}
-        />); 
+        /></a>);
         })}
         </div>
       )}
@@ -38,7 +39,7 @@ const Gallery = ({ images = DEFAULT_IMAGES }) => {
           </Modal>
         )}
       </ModalGateway>
-    </div>
+    </Style>
   )
 }
 

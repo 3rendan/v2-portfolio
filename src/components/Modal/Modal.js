@@ -1,7 +1,7 @@
 import React from 'react'
 import './Modal.css'
-// import resume from '../../assets/images/resume.jpg'
-// import dlResume from '../../assets/images/resume.pdf'
+import resume from '../../assets/images/resume.jpg'
+import dlResume from '../../assets/images/resume.pdf'
 
 const Modal = props => (
   <div className='modal'>

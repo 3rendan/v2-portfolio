@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
+import Style from '../../../styles/GalleryItem'
 
 const GalleryItem = ({id, source, thumbnail, caption, description, position, toggleLightbox}) => {
 
@@ -8,7 +9,7 @@ const GalleryItem = ({id, source, thumbnail, caption, description, position, tog
         toggleLightbox(position)
     }, [position, toggleLightbox]);
 
-    return (<article key={id} className="6u 12u$(xsmall) work-item">
+    return (<Style key={id} className="6u 12u$(xsmall) work-item">
         <a
         className="image fit thumb"
         href={source}
@@ -19,7 +20,7 @@ const GalleryItem = ({id, source, thumbnail, caption, description, position, tog
 
         <h3>{caption}</h3>
         <p>{description}</p>
-    </article>)
+    </Style>)
 };
 
 GalleryItem.displayName = 'GalleryItem'

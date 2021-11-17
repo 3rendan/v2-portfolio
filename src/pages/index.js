@@ -2,11 +2,15 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Gallery from '../components/Gallery'
+import GalleryStyle from '../styles/Gallery'
 import Layout from '../components/layout'
 
 const HomeIndex = () => {
   const siteTitle = 'Brendan Ryan | Software Developer'
   const siteDescription = 'Site description'
+  const mailForm = () =>{
+
+  }
 
   return (
     <Layout>
@@ -25,7 +29,7 @@ const HomeIndex = () => {
             </h2>
           </header>
           <p>
-            Software developer fluent in Javascript, React, Rails, GraphQL, and a host of other technologies eager to begin a career in the field having a course in software engineering at General Assembly. My professional experience combined with a passion for software development and lifelong learning will prove beneficial on this new path. I am open to remote and hybrid work in Massachusetts and Rhode Island.<br />
+            Software developer fluent in Javascript, React, Rails, GraphQL, and a host of other technologies eager to begin a career in the field having a course in software engineering at General Assembly. My professional experience combined with a passion for software development and lifelong learning will prove beneficial on this new path. I am open to remote and hybrid work in Massachusetts and Rhode Island.<br /><br />
 
 
             Technologies:
@@ -41,7 +45,7 @@ const HomeIndex = () => {
         </section>
 
         <section id="two">
-          <h2>Recent Work</h2>
+          <h2>Projects</h2>
 
           <Gallery />
 
@@ -57,11 +61,11 @@ const HomeIndex = () => {
         <section id="three">
           <h2>Get In Touch</h2>
           <p>
-            My professional experience combined with intellectual curiousity and a passion for lifelong learning make me a uniquely valuable software engineer.
+            I'd love to hear from you. Let's start a conversation.
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
-              <form method="post" action="#">
+              <form method="post" action="https://getform.io/f/dea8ba39-ea8c-497a-afb0-48ef1daf5acf">
                 <div className="row uniform 50%">
                   <div className="6u 12u$(xsmall)">
                     <input
@@ -90,7 +94,7 @@ const HomeIndex = () => {
                 </div>
                 <ul className="actions" style={{ marginTop: 30 }}>
                   <li>
-                    <input type="submit" value="Send Message" />
+                    <button onclick="mailForm()">Send Message</button>
                   </li>
                 </ul>
               </form>

@@ -40,10 +40,11 @@
 		)
 	));
 
-	$size-header-width: 35%;
+	$size-header-width: 25%;
 	$size-header-pad: 4em;
 
 /* Basic */
+
 
 	body {
 		background: _palette(bg);
@@ -60,6 +61,7 @@
 		color: _palette(fg);
 		font-family: _font(family);
 		font-size: 16pt;
+		border: solid black 1px;
 		font-weight: _font(weight);
 		line-height: 1.75em;
 	}
@@ -903,7 +905,7 @@
 		@include vendor('justify-content', 'space-between');
 		background-color:		_palette(accent2, bg);
 		background-attachment:	scroll,								fixed;
-		background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
+		background-image:			url('../images/bg.jpg');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								auto;
@@ -1196,7 +1198,7 @@
 
 	@include breakpoint(large) {
 
-		$size-header-width: 30%;
+		$size-header-width: 17.5%;
 		$size-header-pad: 3em;
 
 		/* Header */

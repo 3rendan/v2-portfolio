@@ -1,67 +1,47 @@
-import full01 from '../../../assets/images/fulls/01.jpg'
-import full02 from '../../../assets/images/fulls/02.jpg'
-import full03 from '../../../assets/images/fulls/03.jpg'
-import full04 from '../../../assets/images/fulls/04.jpg'
-import full05 from '../../../assets/images/fulls/05.jpg'
-import full06 from '../../../assets/images/fulls/06.jpg'
+import fullAth from '../../../assets/images/fulls/ath.jpg'
+import sku from '../../../assets/images/fulls/sku.png'
+import fullGroceries from '../../../assets/images/fulls/groceries.jpg'
+import fullMods from '../../../assets/images/fulls/mods.png'
+import ath from '../../../assets/images/thumbs/ath.jpg'
+import groceries from '../../../assets/images/thumbs/groceries.jpg'
+import icon from '../../../assets/images/thumbs/icon.png'
 import resume from '../../../assets/images/fulls/resume.jpg'
-import thumb02 from '../../../assets/images/thumbs/02.jpg'
-import thumb01 from '../../../assets/images/thumbs/01.jpg'
-import thumb03 from '../../../assets/images/thumbs/03.jpg'
-import thumb04 from '../../../assets/images/thumbs/04.jpg'
-import thumb05 from '../../../assets/images/thumbs/05.jpg'
-import thumb06 from '../../../assets/images/thumbs/06.jpg'
+import modsExpanded from '../../../assets/images/thumbs/modsExpanded.png'
 import thumbresume from '../../../assets/images/thumbs/thumbresume.jpg'
+
 
 
 export const DEFAULT_IMAGES = [
     {
       id: '1',
-      source: full01,
-      thumbnail: thumb01,
-      caption: 'Photo 1',
-      description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+      source: fullAth,
+      thumbnail: ath,
+      caption: 'Providence Athenaeum Art Collection',
+      description: `A ReactJS SPA based on the Omeka API feed from the digital art collection of the Providence Athenaeum`,
+      link: 'http://dpa.brendanryan.xyz'
     },
     {
       id: '2',
-      source: full02,
-      thumbnail: thumb02,
-      caption: 'Photo 2',
-      description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+      source: sku,
+      thumbnail: icon,
+      caption: 'Skeuomorph',
+      description: 'An Electron desktop app for cataloging and storing digital asset collections',
+      link: 'https://github.com/3rendan/skeuomorph'
     },
     {
       id: '3',
-      source: full03,
-      thumbnail: thumb03,
-      caption: 'Photo 3',
-      description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+      source: fullGroceries,
+      thumbnail: groceries,
+      caption: 'Foodie',
+      description: 'The Foodie app allows users to create shopping lists tied to a user account. Lists can be shared between users. It is built with React JS utilizing a Rails backend.',
+      link: 'https://github.com/3rendan/skeuomorph'
     },
     {
       id: '4',
-      source: full04,
-      thumbnail: thumb04,
-      caption: 'Photo 4',
-      description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    },
-    {
-      id: '5',
-      source: full05,
-      thumbnail: thumb05,
-      caption: 'Photo 5',
-      description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    },
-    {
-      id: '6',
-      source: full06,
-      thumbnail: thumb06,
-      caption: 'Photo 6',
-      description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    },
-    {
-      id: '6',
-      source: resume,
-      thumbnail: thumbresume,
-      caption: 'Brendan Ryan Resume',
-      description: 'Brendan Ryan | Software Developer',
+      source: fullMods,
+      thumbnail: modsExpanded,
+      caption: 'MODS Expanded',
+      description: `A MODS metadata plugin for Omeka with the full complement of categories as used by the Digital Commonwealth. It extends the plugin made by Columbia University Libraries Digital Library and Scholarly Technologies to include the full scope of MODS fields used at Digital Commonwealth. Some of the structure and format have been retained so that the Omeka CMS will recognize it as a valid plugin.`,
+      link: 'https://github.com/3rendan/MODS-Expanded'
     }
 ]
