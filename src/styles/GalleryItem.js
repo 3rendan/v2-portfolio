@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const GalleryItem = styled.article`
   text-align: center;
   max-width: 50%;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   float: left;
   margin: auto;
   padding: 2rem;

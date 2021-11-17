@@ -1,18 +1,18 @@
 .modal {
-  width: 90%;
+  width: 80%;
   border-color: white;
   box-shadow: 0 2px 8px rgb(0, 0, 0, 0.26);
-  position: relative;
+  position: fixed;
   top: 2vh;
   left: 2%;
   z-index: 4545;
 }
 .resume {
-  max-height: 75%;
+  /* max-height: 75%; */
 }
 
 .action-btn {
-  background-color: #A03C3C;
+  background-color: #3590F3;
 	border-radius: 4px;
 	margin: 0 10px;
 	height: 20px;
@@ -20,6 +20,12 @@
 	text-transform: uppercase;
   line-height: 0em;
 }
+.__modalcontent {
+  display: block;
+  max-width: 95%;
+  max-height: 800px
+}
+
 @media (min-width: 768px){
   .modal {
     width: 50rem;

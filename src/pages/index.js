@@ -1,16 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+
 import Gallery from '../components/Gallery'
+import Resume from './Resume'
+import Form from '../form/Form'
 import GalleryStyle from '../styles/Gallery'
 import Layout from '../components/layout'
 
 const HomeIndex = () => {
   const siteTitle = 'Brendan Ryan | Software Developer'
   const siteDescription = 'Site description'
-  const mailForm = () =>{
-
-  }
 
   return (
     <Layout>
@@ -20,7 +20,7 @@ const HomeIndex = () => {
       </Helmet>
 
       <div id="main">
-        <section id="one">
+        <section id="two">
           <header className="major">
             <h2>
               Software developer with professional experience
@@ -36,68 +36,23 @@ const HomeIndex = () => {
             React JS || Javascript || HTML5 || Ruby on Rails || Rails || Git || Gatsby JS || GraphQL || Bootstrap || Node.js || MongoDB || Express || CSS || PHP
           </p>
           <ul className="actions">
-            <li>
-              <a href="#" className="button">
-                Resume
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section id="two">
-          <h2>Projects</h2>
-
-          <Gallery />
-
-          <ul className="actions">
-            <li>
-              <a href="#" className="button">
-                Full Portfolio
-              </a>
-            </li>
+            <Resume />
           </ul>
         </section>
 
         <section id="three">
+          <h2>Projects</h2>
+          <Gallery />
+        </section>
+
+        <section id="four">
           <h2>Get In Touch</h2>
           <p>
             I'd love to hear from you. Let's start a conversation.
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
-              <form method="post" action="https://getform.io/f/dea8ba39-ea8c-497a-afb0-48ef1daf5acf">
-                <div className="row uniform 50%">
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div className="12u">
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                      rows="4"
-                    ></textarea>
-                  </div>
-                </div>
-                <ul className="actions" style={{ marginTop: 30 }}>
-                  <li>
-                    <button onclick="mailForm()">Send Message</button>
-                  </li>
-                </ul>
-              </form>
+              <Form />
             </div>
             <div className="4u 12u$(small)">
               <ul className="labeled-icons">

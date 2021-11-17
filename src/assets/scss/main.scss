@@ -810,11 +810,13 @@
 		height: 3.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
-		min-width: 10em;
+		min-width: 75%;
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		display: block;
+		margin: auto;
 
 		&:hover {
 			border-color: _palette(accent1, bg);
@@ -956,7 +958,7 @@
 			margin: (_size(element-margin) * 0.5) 0 0 0;
 
 			a {
-				color: _palette(accent2, fg-light);
+				color: _palette(accent2, fg-bold);
 			}
 		}
 
@@ -996,7 +998,6 @@
 		width: calc(100% - #{$size-header-width});
 
 		> section {
-			border-top: solid 2px _palette(border);
 			margin: $size-header-pad 0 0 0;
 			padding: $size-header-pad 0 0 0;
 
@@ -1336,11 +1337,11 @@
 		/* Basic */
 
 			h1 {
-				font-size: 1.5em;
+				font-size: 1em;
 			}
 
 			h2 {
-				font-size: 1.2em;
+				font-size: 1em;
 			}
 
 			h3 {
@@ -1466,9 +1467,9 @@
 			}
 
 		/* Header */
-
+	/* mobile display header sizing */
 			#header {
-				padding: ($size-header-pad * 3) $size-header-pad;
+				padding: ($size-header-pad) $size-header-pad;
 
 				h1 {
 					br {

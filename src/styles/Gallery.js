@@ -9,8 +9,7 @@ const Gallery = styled.div`
   padding: .5rem 0 2rem 0;
   grid-template-columns: 1fr 1fr;
   @media only screen and (max-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
   }
   @media only screen and (max-width: 600px) {
     display: block;
