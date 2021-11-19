@@ -5,13 +5,11 @@ import dlResume from '../../assets/images/resume.pdf'
 
 const Modal = props => (
   <section id="one" className='modal'>
-  <a download='resume.pdf' href={dlResume}><button className='action-btn'>Download</button></a>
+  <a download='brendan-ryan-resume.pdf' href={dlResume}><button className='action-btn'>Download</button></a>
   { props.canClose &&
     <button className='action-btn' onClick={ props.onClose }>
     Close
     </button>}
-    <br />
-    <br />
     <section className='__modalcontent'>
       <img src={resume} />
     <section className='__modalactions'>

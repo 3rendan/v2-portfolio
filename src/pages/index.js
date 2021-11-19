@@ -22,14 +22,12 @@ const HomeIndex = () => {
       <div id="main">
         <section id="two">
           <header className="major">
-            <h2>
-              Software developer with professional experience
-              <br />
-              in a number of fields.
+            <h2 className='center'>
+            BRENDAN RYAN | SOFTWARE DEVELOPER
             </h2>
           </header>
           <p>
-            Software developer fluent in Javascript, React, Rails, GraphQL, and a host of other technologies eager to begin a career in the field having a course in software engineering at General Assembly. My professional experience combined with a passion for software development and lifelong learning will prove beneficial on this new path. I am open to remote and hybrid work in Massachusetts and Rhode Island.<br /><br />
+            Software developer in Javascript, React, Rails, GraphQL, and a host of other technologies eager to begin a career in the field having a course in software engineering at General Assembly. My professional experience combined with a passion for software development and lifelong learning will prove beneficial on this new path. I am open to remote and hybrid work in Massachusetts and Rhode Island.<br /><br />
 
 
             Technologies:
@@ -60,11 +58,9 @@ const HomeIndex = () => {
                   <h3 className="icon fa-home">
                     <span className="label">Address</span>
                   </h3>
-                  8 Hopedale St.
+                  providence
                   <br />
-                  Providence, RI 02903
-                  <br />
-                  United States
+                  rhode island
                 </li>
                 <li>
                   <h3 className="icon fa-mobile">

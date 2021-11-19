@@ -23,12 +23,16 @@
 .__modalcontent {
   display: block;
   max-width: 95%;
-  max-height: 800px
+  max-height: 750px;
+  padding-top: .5rem;
 }
 
 @media (min-width: 768px){
   .modal {
-    width: 50rem;
     left: calc((100% - 50rem) / 2);
+    position: absolute;
+  }
+  .__modalcontent {
+    display: block;
   }
 }

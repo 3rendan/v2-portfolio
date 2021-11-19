@@ -84,6 +84,12 @@
 		font-weight: _font(weight-bold);
 	}
 
+	.center {
+		margin: auto;
+	  width: 80%;
+	  padding: 10px;
+	}
+
 	em, i {
 		font-style: italic;
 	}
